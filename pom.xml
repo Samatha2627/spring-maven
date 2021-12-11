@@ -80,7 +80,7 @@
  <repository>
   <id>github</id>
   <name>GitHub OWNER Apache Maven Packages</name>
-  <url>https://maven.pkg.github.com/Samatha2627/mvn-b6</url>
+  <url>https://maven.pkg.github.com/Samatha2627/spring-maven</url>
  </repository>
 </distributionManagement>
 
