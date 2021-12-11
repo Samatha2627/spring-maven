@@ -13,7 +13,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Deploy to Github Package Registry
       env:
-        TOKEN: ${{ secrets.TOKEN }}
+        TOKEN: ${{ secrets.token }}
       run: |
           mkdir -p ~/.m2
           echo "<settings><servers><server><id>gh</id><username>$(echo "$GITHUB_REPOSITORY" | awk -F / '{print $1}')</username><password>\${env.TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
